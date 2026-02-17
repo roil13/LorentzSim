@@ -1,0 +1,5 @@
+{
+  "name": "Lorentz Force Simulator",
+  "description": "Interactive 3D simulation of a charged particle moving in a magnetic field using the Lorentz force law, with AI-powered physics analysis.",
+  "requestFramePermissions": []
+}
