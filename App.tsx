@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SimulationCanvas from './components/SimulationCanvas';
 import ControlPanel from './components/ControlPanel';
 import { SimulationParams } from './types';
+import { createRoot } from 'react-dom/client';
 
 const App: React.FC = () => {
   // Initial Simulation Parameters
@@ -96,3 +97,8 @@ const App: React.FC = () => {
 };
 
 export default App;
+const container = document.getElementById('root');
+if (container) {
+  const root = createRoot(container);
+  root.render(<App />);
+}
